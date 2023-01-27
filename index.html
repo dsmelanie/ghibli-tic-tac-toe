@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Ghibli TicTacToe</title>
+      <link rel="shortcut icon" href="./images/favicon.ico"/>
+
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+      <!-- CSS -->
+      <link href="style.css" rel="stylesheet"/>
+
+    </head>
+
+  <body>
+!
+<!-- Header -->
+
+    <!-- <header>
+    </header> -->
+
+<!-- Page de selection du personnage -->
+
+    <section class="center start-screen">
+
+<!-- Premier joueur -->
+
+      <form method="post">
+        <h2>Choose Your Ghibli Character</h2>
+        <div class="player-info">
+          <label for="player1-name">Player 1:</label>
+          <input maxlength="20" name="playerA" placeholder="Enter name" type="text" id="player1-name" required/>
+        </div>
+        <div class="markers player1-markers">
+          <div class="marker marker-margin marker-a"><img /></div>
+          <div class="marker marker-a"><img /></div>
+          <div class="marker marker-margin marker-a"><img /></div>
+          <div class="marker marker-a"><img /></div>
+        </div>
+
+<!-- Deuxième joueur  -->
+
+        <div class="player-info">
+          <label for="player2-name">Player 2:</label>
+          <input maxlength="20" name="playerA" placeholder="Enter name" type="text" id="player2-name" required/> 
+        </div>
+        <div class="markers player2-markers">
+          <div class="marker marker-margin marker-b"><img /></div>
+          <div class="marker marker-b"><img /></div>
+          <div class="marker marker-margin marker-b"><img /></div>
+          <div class="marker marker-b"><img /></div>
+        </div>
+
+<!-- Démarrage du jeu -->
+
+        <div id="start-game-wrapper"><button id="start-game">Play</button></div>
+      </form>
+    </section>
+
+<!-- Page de jeu - grille morpion -->
+
+    <main class="center hidden">
+      <h2>
+        <span class="game-info"><img style="height: 60px; margin-right: 5px"/>Player 1's turn</span>
+      </h2>
+      <div class="board">
+        <div data-row="0" data-col="0" class="cell cell-no-left cell-no-top"></div>
+        <div data-row="0" data-col="1" class="cell cell-no-top"></div>
+        <div data-row="0" data-col="2" class="cell cell-no-top cell-no-right"></div>
+        <div data-row="1" data-col="0" class="cell cell-no-left"></div>
+        <div data-row="1" data-col="1" class="cell"></div>
+        <div data-row="1" data-col="2" class="cell cell-no-right"></div>
+        <div data-row="2" data-col="0" class="cell cell-no-left cell-no-bottom"></div>
+        <div data-row="2" data-col="1" class="cell cell-no-bottom"></div>
+        <div data-row="2" data-col="2" class="cell cell-no-bottom cell-no-right"></div>
+      </div>
+
+<!-- Bouttons reset et new game -->
+
+      <div class="game-btns">
+        <div><button class="restart">Reset Game</button></div>
+        <div><button class="new-game">New Game</button></div>
+      </div>
+    </main>
+
+<!-- Footer -->
+
+    <!-- <footer>
+    </footer> -->
+
+<!-- Script JS -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
