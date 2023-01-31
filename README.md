@@ -24,5 +24,7 @@
 
 <br>
 
+<div>
 <img width="300px" src="./images/Capture A - Mobile.png">
 <img width="300px" src="./images/Capture B - Mobile.png">
+</div>
