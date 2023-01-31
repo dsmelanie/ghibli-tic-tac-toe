@@ -45,30 +45,20 @@ body {
   /* background-color: black; */
   background-image: url(./images/bg.webp);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .center {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 30px;
 }
 
 header {
-  background: linear-gradient(to right, #16ae58, #c6e115 70%, #e6eb08);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  border-bottom: 3px solid #070707;
-  height: 15%;
-}
-
-header h1 {
-  font-size: 54px;
-}
-
-.start-screen {
-  height: 85%;
+  color: white;
+  text-shadow: 3px 2px 5px #000000;
+  margin-top: 25px;
+  font-size: large;
 }
 
 .markers {
@@ -100,7 +90,7 @@ form {
   grid-auto-flow: column;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 
 #start-game-wrapper {
@@ -114,7 +104,9 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 25px;
+  text-shadow: 3px 2px 5px #000000;
+
+  /* margin-top: 25px; */
 }
 
 .player-info > label,
@@ -233,3 +225,61 @@ button:active {
 }
 
 
+@media only screen and (max-width: 950px) and (min-height: 300px) {
+  body {
+    background-image: url(./images/background-mobile.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  header {
+    margin-top: 35px;
+    /* font-size: 17px; */
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+
+  .player-info > label,
+  input {
+    font-size: 20px;
+  }
+  .board {
+    /* margin-top: -25px; */
+    height: calc(0.9 * 100vw);
+    width: 90%;
+  }
+  button {
+    font-size: 16px;
+    padding: 5px 10px;
+    width: 100%;
+  }
+
+  .game-btns {
+    margin-bottom: 100%;
+    width: 90%;
+    display: flex;
+    justify-content:space-evenly;
+  }
+
+  .start-screen {
+    height: auto;
+    padding: 10px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .marker {
+    height: calc(0.9 * 0.5 * 100vw);
+  }
+  img {
+    max-height: calc(0.9 * 0.44 * 100vw);
+  }
+  input {
+    width: 200px;
+  }
+}
