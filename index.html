@@ -10,7 +10,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
-
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <!-- CSS -->
       <link href="style.css" rel="stylesheet"/>
 
@@ -21,7 +21,11 @@
 <!-- Header -->
 
     <header>
-      <h1>Ghibli Tic-Tac-Toe</h1>
+      <h1>Tic-Tac-Toe</h1>
+      <p>
+        Coded with <b>&#10084;</b> by
+        <a href="https://github.com/rdsmelanie" target="_blank">@rdsmelanie</a>
+      </p>
     </header>
 
 <!-- Page de selection du personnage -->
@@ -31,9 +35,9 @@
 <!-- Premier joueur -->
 
       <form method="post">
-        <h2>Choose Your Character</h2>
+        <h2>Choose your Ghibli character</h2>
         <div class="player-info">
-          <label for="player1-name">Player 1 :</label>
+          <label for="player1-name">Player 1</label>
           <input maxlength="20" name="playerA" placeholder="Enter name" type="text" id="player1-name" required/>
         </div>
         <div class="markers player1-markers">
@@ -46,7 +50,7 @@
 <!-- Deuxième joueur  -->
 
         <div class="player-info">
-          <label for="player2-name">Player 2 :</label>
+          <label for="player2-name">Player 2</label>
           <input maxlength="20" name="playerA" placeholder="Enter name" type="text" id="player2-name" required/> 
         </div>
         <div class="markers player2-markers">
@@ -87,11 +91,6 @@
         <div><button class="new-game">New Game</button></div>
       </div>
     </main>
-
-<!-- Footer -->
-
-    <!-- <footer>
-    </footer> -->
 
 <!-- Script JS -->
 
