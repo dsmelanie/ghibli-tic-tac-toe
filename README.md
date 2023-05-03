@@ -3,7 +3,7 @@
 
 ## 🖱️ | Link
 
-- Live Site URL : [Click](https://rdsmelanie.github.io/ghibli-tic-tac-toe)
+- Live Site URL : [Click](https://dsmelanie.github.io/ghibli-tic-tac-toe)
 
 ---
 
@@ -18,4 +18,4 @@
 
 ## 🖋️ | Author
 
-- GitHub - [@rdsmelanie](https://github.com/rdsmelanie)
+- GitHub - [@dsmelanie](https://github.com/dsmelanie)
